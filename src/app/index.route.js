@@ -13,9 +13,15 @@
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
         controllerAs: 'main'
+      })
+      .state('resume', {
+        url: '/resume',
+        templateUrl: 'app/resume/resume.html',
+        controller: 'ResumeController',
+        controllerAs: 'vm'
       });
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/resume');
   }
 
 })();
