@@ -1,0 +1,54 @@
+####################
+# GLOBAL GITIGNORE #
+####################
+#
+# Author  Jonathan Ho
+# Email   joho@joho.io
+#
+#####################
+
+# Build #
+#########
+.tmp/
+.sass-cache/
+dist/
+
+# bower and npm #
+#################
+bower_components
+node_modules
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# Miscellaneous #
+#################
+!.gitkeep
+.sass-cache/
+.tmp/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea
+*.lnk
+tmp
+*alias
+.yo-rc.json
