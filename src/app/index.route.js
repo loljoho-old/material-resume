@@ -10,18 +10,16 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
-        controllerAs: 'main'
+        templateUrl: 'app/resume/resume.html',
       })
-      .state('resume', {
-        url: '/resume',
+      .state('section', {
+        url: '/section',
         templateUrl: 'app/resume/resume.html',
         controller: 'ResumeController',
-        controllerAs: 'vm'
+        controllerAs: 'sm'
       });
 
-    $urlRouterProvider.otherwise('/resume');
+    $urlRouterProvider.otherwise('/');
   }
 
 })();
