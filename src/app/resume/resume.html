@@ -1,173 +1,19 @@
-<div layout="row">
+<mr-jumbotron class="md-accent md-hue-3" size="lg">
+  Lorem Ipsum
+</mr-jumbotron>
 
-  <!-- BEGIN: Sidenav Left -->
-  <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z4"
-              md-component-id="left"
-              md-is-locked-open="$mdMedia('gt-sm')">
+<section id="summary">
+  <md-content class="md-margin md-padding md-whiteframe-z2">
+    <p>
+      <strong>Front-End Developer</strong> with Full-Stack experience and background in Computer Science and Information Technology, including exposure to: <strong>Node.js</strong> and <strong>AngularJS</strong> web application development; <strong>Platform-Agnostic</strong>, <strong>Mobile-Friendly</strong> user interface development and <strong>Responsive Web Design</strong>; and <strong>server-side PHP</strong> and <strong>Python</strong> with <strong>MySQL</strong> and <strong>Object-Relational Mapping</strong>, and <strong>RESTful API</strong> design and consumption.
+    </p>
 
-    <header style="background-color:rgb(213, 0, 0); 
-                        text-align:center;
-                        padding-top: 12px;">
+    <p>
+      Sociable and detail-oriented team player with a passion for continuous learning and self-improvement.
+    </p>
 
-      <img ng-src="{{ vm.resumeData.basics.picture }}"
-           style="height: 128px; 
-                  width: 128px;
-                  margin: 0 auto;
-                  border-radius: 64px;">
-      
-    </header>
-                  
-    <md-toolbar class="md-medium-tall md-accent md-hue-3">
-      <div class="md-toolbar-tools">
-        <span flex></span>
-        <h1 class="md-display-1">{{ vm.resumeData.basics.name }}</h1>
-        <span flex></span>
-      </div>
-      <div class="md-toolbar-tools md-toolbar-tools-bottom">
-        <span flex></span>
-        <small class="md-subhead-1">
-          {{ vm.resumeData.basics.label }}
-        </small>
-        <span flex></span>
-      </div>
-    </md-toolbar>
-
-    <md-content flex>
-      <md-list>
-        <md-subheader>Contact</md-subheader>
-        <md-list-item class="md-clickable"
-                      ng-click="vm.contactWith(email)">
-          <md-icon class="material-icons">&#xE0BE;</md-icon>
-          <p>{{ vm.resumeData.basics.email }}</p>
-        </md-list-item>
-        <md-list-item class="md-clickable"
-                      ng-click="vm.contactWith(phone)">
-          <md-icon class="material-icons">&#xE0CD;</md-icon>
-          <p>{{ vm.resumeData.basics.phone }}</p>
-        </md-list-item>
-        <md-list-item class="md-clickable"
-                      ng-click="vm.contactWith(website)">
-          <md-icon class="material-icons">&#xE895;</md-icon>
-          <p>{{ vm.resumeData.basics.website }}</p>
-        </md-list-item>
-        <md-list-item class="md-clickable"
-                      ng-click="vm.contactWith(city)">
-          <md-icon class="material-icons">&#xE55F;</md-icon>
-          <p>{{ vm.resumeData.basics.location.city }}, {{ vm.resumeData.basics.location.region }}</p>
-        </md-list-item>
-<!--
-        <md-divider></md-divider>
--->
-      </md-list>
-    </md-content>
-
-    <md-toolbar class="md-accent md-hue-3">
-      <div class="md-toolbar-tools">
-        <span flex></span>
-        <md-button ng-repeat-start="profile in vm.resumeData.basics.profiles"
-                   class="md-icon-button"
-                   ng-href="{{ profile.url }}">
-          <md-icon md-svg-icon="{{ profile.network | lowercase }}"
-                   style="color: #fff;">
-          </md-icon>
-          <md-tooltip>{{ profile.network }} Profile</md-tooltip>
-        </md-button>
-        <span flex ng-if="!$last" ng-repeat-end></span>
-        <span flex></span>
-      </div>
-    </md-toolbar>
-
-  </md-sidenav>
-  <!-- ENDOF: Sidenav Left -->
-
-  
-  <div class="site-container" 
-       layout="column" 
-       role="main" 
-       layout-fill>
-
-    <!-- BEGIN: Main Toolbar -->
-    <md-toolbar class="site-toolbar md-whiteframe-z4"
-                layout="row">
-      <div class="md-toolbar-tools">
-      <!--
-      <md-button class="md-icon-button">
-        <md-icon class="fa material-fa">&#xf1b9;</md-icon>
-      </md-button>
-      <md-button class="md-icon-button">
-        <md-icon class="material-icons">&#xE2C4;</md-icon>
-      </md-button>
-      -->
-
-
-        <span flex></span>
-
-        <!-- BEGIN: Download Menu 
-        <md-menu>
-          <md-button class="md-icon-button"
-                     ng-click="$mdOpenMenu()">
-            <md-icon class="material-icons">&#xE2C4;</md-icon>
-            <md-tooltip>Download Résumé</md-tooltip>
-          </md-button>
-          <md-menu-content>
-            <md-menu-item ng-repeat="drive in vm.resumeData.drives">
-              <md-button ng-click="vm.navigateTo(drive.link)">
-                <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
-                {{ drive.label }}
-              </md-button>
-            </md-menu-item>
-          </md-menu-content>
-        </md-menu>
-        ENDOF: Download Menu -->
-        <span flex></span>
-        <div class="separator"></div>
-        <span>
-          <small>Download Résumé:</small>
-          <md-button class="md-icon-button"
-                     ng-repeat="drive in vm.resumeData.drives"
-                     ng-click="vm.navigateTo(drive.link)">
-            
-            <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
-            <!--
-            <md-icon class="material-icons">{{ drive.iconcode }}</md-icon>
-            -->
-            <md-tooltip>{{ drive.label }}</md-tooltip>
-          </md-button>
-        </span>
-        <div class="separator"></div>
-      </div>
-    </md-toolbar>
-    <!-- ENDOF: Main Toolbar -->
-
-    <!-- BEGIN: Main Content -->
-    <md-content class="md-padding site-inner" layout="row">
-      <md-content layout-fill>
-
-      </md-content>
-      <md-sidenav class="md-sidenav-right md-whiteframe-z4"
-                  md-component-id="right"
-                  md-is-locked-open="$mdMedia('gt-md')">
-        <md-content>
-          <md-list>
-            <md-subheader>Areas of Expertise</md-subheader>
-            <md-list-item class="md-2-line" 
-                          ng-repeat="area in vm.resumeData.expertise">
-              <img ng-src="{{ area.icon }}" 
-                   class="md-avatar">
-              <div class="md-list-item-text">
-                <h3>{{ area.name }}</h3>
-                <md-progress-linear class="md-accent" 
-                                    md-mode="determinate" 
-                                    value="{{ area.level }}">
-                </md-progress-linear>
-              </div>        
-            </md-list-item>
-          </md-list>
-        </md-content>
-      </md-sidenav>
-    </md-content>
-    <!-- ENDOF: Main Content -->
-
-  </div>
-
-</div>
+    <p>
+      Excellent interpersonal and business skills.  Enjoys enjoying the potential of new technologies.  Likes people.  Allergic to cats.
+    </p>
+  </md-content>
+</section>

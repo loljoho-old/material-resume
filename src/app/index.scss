@@ -4,22 +4,27 @@
  */
 // bower:scss
 // endbower
-$sidenav-width: 272px;
+$sidenav-left-width: 272px;
+$sidenav-right-width: 320px;
 
 html {
   font-family: 'Ubuntu', sans-serif;
 }
 body {
-  min-height: 100vh;
-  max-height: 100vh;
-  height: 100vh;
 }
 
+
 md-sidenav.site-sidenav {
+  &.md-sidenav-right {
+    width: $sidenav-right-width;
+    min-width: $sidenav-right-width;
+    max-width: $sidenav-right-width;
+    margin-top: 8px;
+  }
   &.md-sidenav-left {
-    width: $sidenav-width;
-    min-width: $sidenav-width;
-    max-width: $sidenav-width;
+    width: $sidenav-left-width;
+    min-width: $sidenav-left-width;
+    max-width: $sidenav-left-width;
     > header {
       .picture {
         -webkit-border-radius: 64px;
@@ -67,7 +72,7 @@ md-icon.fa.material-fa {
     background-color: rgba(255, 255, 255, 1.0);
   }
   md-content.site-content {
-
+    
   }
 }
 
