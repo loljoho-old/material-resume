@@ -63,25 +63,42 @@ While taking into consideration the extremely short period of time in which this
 
 ## Tasklist
 
+**Responsive**
+
+ - [ ] Toggle button for left `md-sidenav`
+ - [ ] Toggle button for right `md-sidenav`
+
 **Controllers**
 
  - [ ] Function `navigateTo()` for external links
+
+**Stylesheet**
+
+ - [ ] Tidy `index.scss` and prune
 
 **Markup**
 
  - [ ] Add `aria-label` to buttons
  - [ ] Fix all `z-index` values
- - [ ] Create `md-sidenav.sidenav-right` element
- - [ ] Configure router for page content to load in element `div[role=main]` in `resume.html`
+ - [x] Create `md-sidenav.sidenav-right` element
+ - [x] Configure router for page content to load within main element in `resume.html`
 
 
 ## Version History
 
 **Note:** this section will only include MAJOR or MINOR version changes as per [Semantic Versioning](http://semver.org) i.e. given a version number X.Y.Z, increments in the numbers X or Y
 
+
+### 0.4.0 (23-June 2015)
+
+* Application structure and layout
+  * Site toolbar
+  * Right sidenav
+
 ### 0.3.0 (23-June 2015)
 
 * Create Menu element for PDF download
+* Implement toolbar and list elements
 
 ### 0.2.0 (23-June 2015)
 
