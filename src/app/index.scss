@@ -9,6 +9,73 @@ html {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.site-content {
+  md-toolbar.site-toolbar {
+    background-color: rgba(255, 255, 255, 1.0);
+  }
+}
+
+md-toolbar {
+  >.md-toolbar-tools,
+  >.md-toolbar-tools-bottom {
+    .md-display-2 {
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+    .md-display-1 {
+      font-size: 34px;
+      font-weight: 400;
+      line-height: 48px;
+    }
+    .headline {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+    .headline {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+    }
+    .subhead-2 {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+    .subhead-1 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .body-2 {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+    .body-1 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    .button {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    .md-caption {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+  }
+}
+
 [layout=row] {
   flex-direction: row;
 }
