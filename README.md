@@ -24,6 +24,12 @@ Front-End Web Developer résumé application by Jonathan Ho
 > Jonathan Ho
 
 
+## Features
+
+ * [Material Design Icons](http://google.github.io/material-design-icons/)
+ * [Font Awesome Icons](https://github.com/FortAwesome/Font-Awesome)
+
+
 ## Development
 
 This project is an AngularJS single-page web application featuring featuring `ngAnimate`, `ngAria`, `ngMaterial`, `ngResource`, and the third-party `ui-router`.  
@@ -45,9 +51,27 @@ While taking into consideration the extremely short period of time in which this
 *Section Work In Progress*
 
 
+## Tasklist
+
+**Controllers**
+
+ - [ ] Function `navigateTo()` for external links
+
+**Markup**
+
+ - [ ] Add `aria-label` to buttons
+ - [ ] Fix all `z-index` values
+ - [ ] Create `md-sidenav.sidenav-right` element
+ - [ ] Configure router for page content to load in element `div[role=main]` in `resume.html`
+
+
 ## Version History
 
 **Note:** this section will only include MAJOR or MINOR version changes as per [Semantic Versioning](http://semver.org) i.e. given a version number X.Y.Z, increments in the numbers X or Y
+
+### 0.3.0 (23-June 2015)
+
+* Create Menu element for PDF download
 
 ### 0.2.0 (23-June 2015)
 
