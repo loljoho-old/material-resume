@@ -97,10 +97,19 @@
     <md-toolbar class="site-toolbar md-whiteframe-z4"
                 layout="row">
       <div class="md-toolbar-tools">
+      <!--
+      <md-button class="md-icon-button">
+        <md-icon class="fa material-fa">&#xf1b9;</md-icon>
+      </md-button>
+      <md-button class="md-icon-button">
+        <md-icon class="material-icons">&#xE2C4;</md-icon>
+      </md-button>
+      -->
+
 
         <span flex></span>
 
-          <!-- BEGIN: Download Menu -->
+          <!-- BEGIN: Download Menu 
           <md-menu>
             <md-button class="md-icon-button"
                        ng-click="$mdOpenMenu()">
@@ -116,9 +125,21 @@
               </md-menu-item>
             </md-menu-content>
           </md-menu>
-          <!-- ENDOF: Download Menu -->
-
-        <span flex></span>
+          ENDOF: Download Menu -->
+          <span flex></span>
+          <span>
+            <small>View Résumé:</small>
+            <md-button class="md-icon-button"
+                       ng-repeat="drive in vm.resumeData.drives"
+                       ng-click="vm.navigateTo(drive.link)">
+              <!--
+              <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
+              -->
+              <md-icon class="material-icons">{{ drive.iconcode }}</md-icon>
+              <md-tooltip>{{ drive.label }}</md-tooltip>
+            </md-button>
+          </span>
+          <span flex></span>
       </div>
     </md-toolbar>
     <!-- ENDOF: Main Toolbar -->
