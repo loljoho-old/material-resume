@@ -1,0 +1,37 @@
+@mixin border-radius($radius) {
+-webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+        border-radius: $radius;
+}
+@mixin element-height($height) {
+  min-height: $height;
+  max-height: $height;
+      height: $height;
+}
+@mixin element-width($width) {
+  min-width: $width;
+  max-width: $width;
+      width: $width;
+}
+
+.mr-jumbotron {
+
+  @include element-width(100%);
+
+  font-size: 16px;
+  padding: 12px;
+  margin: 0;
+  padding: 16 32px;
+
+  &.sm {
+    @include element-height(128px);
+  }
+  &.md {
+    @include element-height(192px);
+  }
+  &.lg {
+    @include element-height(256px);
+  }
+
+}
