@@ -12,6 +12,7 @@
 .tmp/
 .sass-cache/
 dist/
+assets/data/resume.json
 
 # bower and npm #
 #################
