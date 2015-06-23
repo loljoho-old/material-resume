@@ -20,10 +20,10 @@
       .icon('linkedin',       'assets/icons/linkedin.svg'  )
       .icon('angellist',      'assets/icons/angellist.svg' )
       .icon('codepen',        'assets/icons/codepen.svg'   )
-      
-      .icon('google',         'assets/icons/google.svg'    )
-      .icon('dropbox',        'assets/icons/dropbox.svg'   )
-      .icon('onedrive',       'assets/icons/onedrive.svg'  );
+
+      .icon('google',         'assets/icons/googledrive.svg'  )
+      .icon('dropbox',        'assets/icons/dropbox.svg'      )
+      .icon('onedrive',       'assets/icons/onedrive.svg'     );
 
     // Set options third-party lib
     toastr.options.timeOut = 3000;
