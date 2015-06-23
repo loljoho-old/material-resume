@@ -1,4 +1,6 @@
 <div layout="row">
+
+  <!-- BEGIN: Sidenav Left -->
   <md-sidenav class="site-sidenav md-sidenav-left md-whiteframe-z4"
               md-component-id="left"
               md-is-locked-open="$mdMedia('gt-sm')">
@@ -50,7 +52,7 @@
           <md-icon class="material-icons">&#xE55F;</md-icon>
           <p>{{ vm.resumeData.basics.location.city }}, {{ vm.resumeData.basics.location.region }}</p>
         </md-list-item>
-
+<!--
         <md-divider></md-divider>
 
         <md-subheader>Download Résumé</md-subheader>
@@ -58,10 +60,11 @@
                       ng-repeat="drive in vm.resumeData.drives"
                       ng-click="vm.navigateTo(drive.link)">
           <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
-          <!--<img ng-src"{{ drive.icon }}" class="md-avatar">-->
+          <img ng-src"{{ drive.icon }}" class="md-avatar">
           <p>{{ drive.label }}</p>
           <md-tooltip>via {{ drive.label }}</md
         </md-list-item>
+-->
       </md-list>
     </md-content>
 
@@ -82,9 +85,49 @@
     </md-toolbar>
 
   </md-sidenav>
+  <!-- ENDOF: Sidenav Left -->
 
-  <div class="site-content" layout="column" role="main" flex>
-    <md-toolbar class="site-toolbar md-whiteframe-z4">
+  
+  <div class="site-container" 
+       layout="column" 
+       role="main" 
+       flex>
+
+    <!-- BEGIN: Main Toolbar -->
+    <md-toolbar class="site-toolbar md-whiteframe-z4"
+                layout="row">
+      <div class="md-toolbar-tools">
+
+        <span flex></span>
+
+          <!-- BEGIN: Download Menu -->
+          <md-menu>
+            <md-button class="md-icon-button"
+                       ng-click="$mdOpenMenu()">
+              <md-icon class="material-icons">&#xE2C4;</md-icon>
+              <md-tooltip>Download Résumé</md-tooltip>
+            </md-button>
+            <md-menu-content>
+              <md-menu-item ng-repeat="drive in vm.resumeData.drives">
+                <md-button ng-click="vm.navigateTo(drive.link)">
+                  <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
+                  {{ drive.label }}
+                </md-button>
+              </md-menu-item>
+            </md-menu-content>
+          </md-menu>
+          <!-- ENDOF: Download Menu -->
+
+        <span flex></span>
+      </div>
     </md-toolbar>
+    <!-- ENDOF: Main Toolbar -->
+
+    <!-- BEGIN: Main Content -->
+    <md-content class="site-content" layout="column">
+    </md-content>
+    <!-- ENDOF: Main Content -->
+
   </div>
-</md-tooltip>
+
+</div>
