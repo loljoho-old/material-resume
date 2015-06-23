@@ -24,12 +24,6 @@ Front-End Web Developer résumé application by Jonathan Ho
 > Jonathan Ho
 
 
-## Features
-
- * [Material Design Icons](http://google.github.io/material-design-icons/)
- * [Font Awesome Icons](https://github.com/FortAwesome/Font-Awesome)
-
-
 ## Development
 
 This project is an AngularJS single-page web application featuring featuring `ngAnimate`, `ngAria`, `ngMaterial`, `ngResource`, and the third-party `ui-router`.  
@@ -43,7 +37,23 @@ While taking into consideration the extremely short period of time in which this
 
  * Implement a **Mobile-Friendly**, **Cross-Platform/Browser** user interface accomplished through **Responsive Web Design** and **Progressive Enhancement** over Graceful Degradation, ensuring a consistent user experience that supports all modern platforms and browsers--support of the latter being *N* And *N-1*.
 
+
 *Section Work In Progress*
+
+
+## Features
+
+* [AngularJS](https://angularjs.org)
+* [Material design for AngularJS](https://material.angularjs.org)
+
+* [Google Fonts](https://www.google.com/fonts)
+* [Material design icons](http://google.github.io/material-design-icons/)
+* [Font Awesome](https://github.com/FortAwesome/Font-Awesome) icons
+
+* [GulpJS](http://gulpjs.com)
+* [Browser-Sync](http://browsersync.io/)
+* [Yeoman](http://yeoman.io)
+* Yeoman [Gulp-Angular](https://github.com/Swiip/generator-gulp-angular) generator
 
 
 ## Miscellaneous
