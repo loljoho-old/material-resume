@@ -8,11 +8,13 @@
     <header style="background-color:rgb(213, 0, 0); 
                         text-align:center;
                         padding-top: 12px;">
+
       <img ng-src="{{ vm.resumeData.basics.picture }}"
            style="height: 128px; 
                   width: 128px;
                   margin: 0 auto;
                   border-radius: 64px;">
+      
     </header>
                   
     <md-toolbar class="md-medium-tall md-accent md-hue-3">
@@ -23,7 +25,7 @@
       </div>
       <div class="md-toolbar-tools md-toolbar-tools-bottom">
         <span flex></span>
-        <small>
+        <small class="md-subhead-1">
           {{ vm.resumeData.basics.label }}
         </small>
         <span flex></span>
@@ -32,6 +34,7 @@
 
     <md-content flex>
       <md-list>
+        <md-subheader>Contact</md-subheader>
         <md-list-item class="md-clickable"
                       ng-click="vm.contactWith(email)">
           <md-icon class="material-icons">&#xE0BE;</md-icon>
@@ -54,16 +57,6 @@
         </md-list-item>
 <!--
         <md-divider></md-divider>
-
-        <md-subheader>Download Résumé</md-subheader>
-        <md-list-item class="md-clickable"
-                      ng-repeat="drive in vm.resumeData.drives"
-                      ng-click="vm.navigateTo(drive.link)">
-          <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
-          <img ng-src"{{ drive.icon }}" class="md-avatar">
-          <p>{{ drive.label }}</p>
-          <md-tooltip>via {{ drive.label }}</md
-        </md-list-item>
 -->
       </md-list>
     </md-content>
@@ -77,7 +70,7 @@
           <md-icon md-svg-icon="{{ profile.network | lowercase }}"
                    style="color: #fff;">
           </md-icon>
-          <md-tooltip>View {{ profile.network }} Profile</md-tooltip>
+          <md-tooltip>{{ profile.network }} Profile</md-tooltip>
         </md-button>
         <span flex ng-if="!$last" ng-repeat-end></span>
         <span flex></span>
@@ -91,7 +84,7 @@
   <div class="site-container" 
        layout="column" 
        role="main" 
-       flex>
+       layout-fill>
 
     <!-- BEGIN: Main Toolbar -->
     <md-toolbar class="site-toolbar md-whiteframe-z4"
@@ -109,43 +102,69 @@
 
         <span flex></span>
 
-          <!-- BEGIN: Download Menu 
-          <md-menu>
-            <md-button class="md-icon-button"
-                       ng-click="$mdOpenMenu()">
-              <md-icon class="material-icons">&#xE2C4;</md-icon>
-              <md-tooltip>Download Résumé</md-tooltip>
-            </md-button>
-            <md-menu-content>
-              <md-menu-item ng-repeat="drive in vm.resumeData.drives">
-                <md-button ng-click="vm.navigateTo(drive.link)">
-                  <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
-                  {{ drive.label }}
-                </md-button>
-              </md-menu-item>
-            </md-menu-content>
-          </md-menu>
-          ENDOF: Download Menu -->
-          <span flex></span>
-          <span>
-            <small>View Résumé:</small>
-            <md-button class="md-icon-button"
-                       ng-repeat="drive in vm.resumeData.drives"
-                       ng-click="vm.navigateTo(drive.link)">
-              <!--
-              <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
-              -->
-              <md-icon class="material-icons">{{ drive.iconcode }}</md-icon>
-              <md-tooltip>{{ drive.label }}</md-tooltip>
-            </md-button>
-          </span>
-          <span flex></span>
+        <!-- BEGIN: Download Menu 
+        <md-menu>
+          <md-button class="md-icon-button"
+                     ng-click="$mdOpenMenu()">
+            <md-icon class="material-icons">&#xE2C4;</md-icon>
+            <md-tooltip>Download Résumé</md-tooltip>
+          </md-button>
+          <md-menu-content>
+            <md-menu-item ng-repeat="drive in vm.resumeData.drives">
+              <md-button ng-click="vm.navigateTo(drive.link)">
+                <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
+                {{ drive.label }}
+              </md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
+        ENDOF: Download Menu -->
+        <span flex></span>
+        <div class="separator"></div>
+        <span>
+          <small>Download Résumé:</small>
+          <md-button class="md-icon-button"
+                     ng-repeat="drive in vm.resumeData.drives"
+                     ng-click="vm.navigateTo(drive.link)">
+            
+            <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
+            <!--
+            <md-icon class="material-icons">{{ drive.iconcode }}</md-icon>
+            -->
+            <md-tooltip>{{ drive.label }}</md-tooltip>
+          </md-button>
+        </span>
+        <div class="separator"></div>
       </div>
     </md-toolbar>
     <!-- ENDOF: Main Toolbar -->
 
     <!-- BEGIN: Main Content -->
-    <md-content class="site-content" layout="column">
+    <md-content class="md-padding site-inner" layout="row">
+      <md-content layout-fill>
+
+      </md-content>
+      <md-sidenav class="md-sidenav-right md-whiteframe-z4"
+                  md-component-id="right"
+                  md-is-locked-open="$mdMedia('gt-md')">
+        <md-content>
+          <md-list>
+            <md-subheader>Areas of Expertise</md-subheader>
+            <md-list-item class="md-2-line" 
+                          ng-repeat="area in vm.resumeData.expertise">
+              <img ng-src="{{ area.icon }}" 
+                   class="md-avatar">
+              <div class="md-list-item-text">
+                <h3>{{ area.name }}</h3>
+                <md-progress-linear class="md-accent" 
+                                    md-mode="determinate" 
+                                    value="{{ area.level }}">
+                </md-progress-linear>
+              </div>        
+            </md-list-item>
+          </md-list>
+        </md-content>
+      </md-sidenav>
     </md-content>
     <!-- ENDOF: Main Content -->
 

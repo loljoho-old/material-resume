@@ -7,6 +7,15 @@
 
   /** @ngInject */
   function resumeService($resource) {
-    return $resource('assets/data/resume.json');
+    var service = $resource('assets/data/:query.json',
+      { query: 'resume' },
+      {
+        getSections: {
+          method: 'GET', 
+          params: { query: 'sections' }
+        }
+      });
+
+    return service;
   }
 })();
