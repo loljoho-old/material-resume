@@ -9,12 +9,27 @@ html {
   font-family: 'Ubuntu', sans-serif;
 }
 
+md-icon.fa.material-fa {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.33333333em;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  vertical-align: -7.5%;
+  display: inline-block;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+}
+
 .site-container {
   md-toolbar.site-toolbar {
     background-color: rgba(255, 255, 255, 1.0);
   }
   md-content.site-content {
-    
+
   }
 }
 
