@@ -46,7 +46,6 @@
           'Overview',
             '> Summary',
             '> Profile',
-            '> Profile',
             '> Ongoing',
           'Skills & Expertise',
             '> Solution Stack',

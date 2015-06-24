@@ -3,9 +3,6 @@
   'use strict';
 
   angular
-    .module('resumeApp')
-    .constant('malarkey', malarkey)
-    .constant('toastr', toastr)
-    .constant('moment', moment);
+    .module('resumeApp');
 
 })();

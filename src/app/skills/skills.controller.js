@@ -6,8 +6,8 @@
     .controller('SkillsController', SkillsController);
 
   /** @ngInject */
-  function SkillsController($mdSidenav) {
-    var self = this;
+  function SkillsController($mdSidenav, resumeService) {
+    var vm = this;
 
     
     vm.resumeData = [];
