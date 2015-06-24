@@ -17,7 +17,9 @@
        */
       .state('home', {
         url: '/',
-        templateUrl: 'app/resume/resume.html'
+        templateUrl: 'app/home/home.html',
+        controller: 'HomeController',
+        controllerAs: 'sm'
       })
 
       /*
@@ -42,6 +44,14 @@
        */
       .state('experience', {
         url: '/experience',
+        templateUrl: 'app/resume/resume.html',
+        controller: 'ResumeController',
+        controllerAs: 'sm'
+      })
+      //
+      //
+      .state('resume', {
+        url: '/resume',
         templateUrl: 'app/resume/resume.html',
         controller: 'ResumeController',
         controllerAs: 'sm'

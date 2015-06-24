@@ -10,10 +10,10 @@
     // Enable log
     $logProvider.debugEnabled(true);
   
-    $mdThemingProvider.theme('default')
-      .primaryPalette('grey')
-      .accentPalette('red')
-      .warnPalette('deep-orange');
+    //$mdThemingProvider.theme('default')
+    //  .primaryPalette('grey')
+    //  .accentPalette('red')
+    //  .warnPalette('deep-orange');
 
     $mdIconProvider
       .icon('github',         'assets/icons/github.svg'    )
