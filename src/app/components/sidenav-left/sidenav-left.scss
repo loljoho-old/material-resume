@@ -1,0 +1,9 @@
+
+md-sidenav.site-sidenav.md-sidenav-left {
+  background-color: transparent;
+  @include element-width($sidenav-left-width);
+
+  .md-subhead {
+    padding-bottom: 16px;
+  }
+}
