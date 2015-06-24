@@ -1,0 +1,24 @@
+// Absolute Element Height
+// ------------------------------
+@mixin element-height($height) {
+  min-height: $height;
+  max-height: $height;
+      height: $height;
+}
+
+// Absolute Element Width
+// ------------------------------
+@mixin element-width($width) {
+  min-width: $width;
+  max-width: $width;
+      width: $width;
+}
+
+// Border Radius
+// ------------------------------
+@mixin border-radius($radius) {
+-webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+        border-radius: $radius;
+}

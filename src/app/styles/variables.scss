@@ -1,0 +1,32 @@
+// Relative Typographic Function
+// ------------------------------
+@function rem($multiplier) {
+  $font-size: 10px;
+  @return $multiplier * $font-size;
+}
+
+// Theming
+// ------------------------------
+$md-accent-page:        rgb(255, 224, 224);
+
+$md-primary-font:       rgba(0, 0, 0, 0.870588);
+$md-primary-base:       rgb(158, 158, 158);
+$md-primary-hue-1:      rgb(224, 224, 224);
+$md-primary-hue-2:      rgb(66, 66, 66);
+$md-primary-hue-2-font: rgba(255, 255, 255, 0.870588);
+$md-primary-hue-3:      rgb(255, 255, 255);
+
+$md-accent-font:        rgba(255, 255, 255, 1);
+$md-accent-base:        rgb(255, 205, 210);
+$md-accent-hue-1:       rgb(255, 138, 128);
+$md-accent-hue-2:       rgb(255, 23, 68);
+$md-accent-hue-3:       rgb(213, 0, 0);
+
+// Base Typography
+// ------------------------------
+$font-family-base:    Ubuntu, sans-serif;
+
+// Sidenavs
+// ------------------------------
+$sidenav-left-width:  272px;
+$sidenav-right-width: 320px;
