@@ -4,7 +4,8 @@
 
 
   <!-- BEGIN: Header Block -->
-  <header class="md-whiteframe-z2">
+  <header class="md-whiteframe-z2"
+          hide-sm>
     <img ng-src="{{ vm.resumeData.basics.picture }}">
   </header>
   <!-- ENDOF: Header Block -->
@@ -31,7 +32,7 @@
 
 
   <!-- BEGIN: Sidenav Content -->
-  <md-content md-scroll-y flex>
+  <md-content md-scroll-y>
     <md-list>
       <md-subheader class="md-no-sticky">Contact</md-subheader>
       <md-list-item class="md-clickable"
@@ -77,25 +78,6 @@
     </md-list>
   </md-content>
   <!-- ENDOF: Sidenav Content -->
-
-
-  <!-- BEGIN: Sidenav Toolbar 
-  <md-toolbar class="md-accent md-hue-3">
-    <div class="md-toolbar-tools">
-      <span flex></span>
-      <md-button ng-repeat-start="profile in vm.resumeData.basics.profiles"
-                 class="md-icon-button"
-                 ng-href="{{ profile.url }}">
-        <md-icon md-svg-icon="{{ profile.network | lowercase }}"
-                 style="color: #fff;">
-        </md-icon>
-        <md-tooltip>{{ profile.network }} Profile</md-tooltip>
-      </md-button>
-      <span flex ng-if="!$last" ng-repeat-end></span>
-      <span flex></span>
-    </div>
-  </md-toolbar>
-  ENDOF: Sidenav Toolbar -->
 
 
 </md-sidenav>
