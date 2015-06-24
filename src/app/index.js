@@ -6,14 +6,13 @@
     .controller('View', View);
 
   /** @ngInject */
-  function View(resumeService, $timeout, $mdSidenav, $mdUtil, $log) {
+  function View(resumeService, $timeout, $mdMedia, $mdSidenav, $mdUtil, $log) {
     var vm = this;
 
     vm.resumeData = [];
+    vm.pageTitle  = '';
 
-
-    //vm.toggleSidenav  = toggleSidenav();
-    vm.buildToggler   = buildToggler();
+    vm.viewportSmall  = viewportSmall; 
 
     activate();
 
@@ -43,14 +42,10 @@
       }, 300);
       return debounceFn;
     }
-/*
-    function toggleSidenav(componentId) {
-      $mdSidenav(componentId).toggle()
-        .then(function() {
-          $log.debug('Sidenav ' + componentId + ' toggled.');
-        });
+
+    function viewportSmall() {
+      return $mdMedia('sm');
     }
-*/
 
   }
 })();
