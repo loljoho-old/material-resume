@@ -66,19 +66,18 @@ While taking into consideration the extremely short period of time in which this
 **Content**
 
  - [ ] **Home**
-   - [ ] **Summary** - Professional Summary and/or Branding Statement
-   - [ ] **Ongoing** - Overview of Current/Ongoing Projects & Education
-   - [ ] **Profile** - Interests, Miscellaneous, etc
-   - [ ] **Contact** - Contact Me
+   - [ ] **Summary**
+   - [ ] **Profile**
+   - [ ] **Ongoing**
  - [ ] **Skills**
-   - [ ] **Solution Stack** - Current Preferred Stack
-   - [ ] **Areas of Expertise** - Areas of Expertise
-   - [ ] **Developmental Focus** - Current Ongoing Professional Development
-   - [ ] **Proficiencies** - Technical Skills, Concepts, Theories
+   - [ ] **Solution Stack**
+   - [ ] **Areas of Expertise**
+   - [ ] **Technical Skills** 
+   - [ ] **Proficiencies**
  - [ ] **Experience**
-   - [ ] **Employment** - Employment History
-   - [ ] **Projects** - Personal Projects/Portfolio
-   - [ ] **Other** - Professional Development; Education
+   - [ ] **Projects** - Portfolio
+   - [ ] **Employment** - Work History
+   - [ ] **Education** - Professional Development; Education
  - [ ] **Résumé**
 
 

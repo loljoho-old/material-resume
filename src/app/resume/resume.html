@@ -1,14 +1,14 @@
-<!--
-<mr-jumbotron class="md-hue-2" 
-              size="lg">
-  Lorem Ipsum
-</mr-jumbotron>
--->
-
-<section id="summary">
-  <md-content class="md-margin md-padding md-whiteframe-z2">
+<md-content class="md-margin md-padding md-whiteframe-z2" id="summary">
+  <md-toolbar class="md-hue-3">
+    <div class="md-toolbar-tools">
+      <span flex></span>
+      <span class="md-headline">Summary</span>
+      <span flex></span>
+    </div>
+  </md-toolbar>
+  <md-content>
     <p>
-      <strong>Front-End Developer</strong> with Full-Stack experience and background in Computer Science and Information Technology, including exposure to: <strong>Node.js</strong> and <strong>AngularJS</strong> web application development; <strong>Platform-Agnostic</strong>, <strong>Mobile-Friendly</strong> user interface development and <strong>Responsive Web Design</strong>; and <strong>server-side PHP</strong> and <strong>Python</strong> with <strong>MySQL</strong> and <strong>Object-Relational Mapping</strong>, and <strong>RESTful API</strong> design and consumption.
+      <strong>Front-End Developer</strong> with Full-Stack experience and background in Computer Science and Information Technology, including exposure to: <strong>Node.js</strong> and <strong>AngularJS</strong> web application development; <strong>Platform-Agnostic</strong>, <strong>Mobile-Friendly</strong> user interface development and <strong>Responsive Web Design</strong>; and <strong>server-side PHP</strong>, <strong>Python</strong>, <strong>MySQL</strong>, <strong>Object-Relational Mapping</strong>, and <strong>RESTful API</strong> design and consumption.
     </p>
 
     <p>
@@ -19,4 +19,59 @@
       Excellent interpersonal and business skills.  Enjoys enjoying the potential of new technologies.  Likes people.  Allergic to cats.
     </p>
   </md-content>
-</section>
+</md-content>
+
+
+<md-content class="md-margin md-padding md-whiteframe-z2" id="expertise">
+  <md-toolbar class="md-hue-3">
+    <div class="md-toolbar-tools">
+      <span flex></span>
+      <span class="md-headline">Areas of Expertise</span>
+      <span flex></span>
+    </div>
+  </md-toolbar>
+  <md-content>
+    <md-list>
+      <md-list-item class="md-2-line" 
+                    ng-repeat="area in vm.resumeData.expertise">
+        <img ng-src="{{ area.icon }}" 
+             class="md-avatar">
+        <div class="md-list-item-text">
+          <h3>{{ area.name }}</h3>
+          <md-progress-linear class="md-accent" 
+                              md-mode="determinate" 
+                              value="{{ area.level }}">
+          </md-progress-linear>
+        </div>        
+      </md-list-item>
+    </md-list>
+  </md-content>
+</md-content>
+
+
+<md-content class="md-margin md-padding md-whiteframe-z2" id="skills">
+  <md-toolbar class="md-hue-3">
+    <div class="md-toolbar-tools">
+      <span flex></span>
+      <span class="md-headline">Technical Skils</span>
+      <span flex></span>
+    </div>
+  </md-toolbar>
+  <md-content>
+    
+  </md-content>
+</md-content>
+
+
+<md-content class="md-margin md-padding md-whiteframe-z2" id="profile">
+  <md-toolbar class="md-hue-3">
+    <div class="md-toolbar-tools">
+      <span flex></span>
+      <span class="md-headline">Profile</span>
+      <span flex></span>
+    </div>
+  </md-toolbar>
+  <md-content>
+    
+  </md-content>
+</md-content>

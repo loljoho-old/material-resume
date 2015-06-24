@@ -19,28 +19,8 @@
   </md-toolbar>
   <md-content flex>
     <md-list>
-
-<!--
-      <md-subheader>Areas of Expertise</md-subheader>
-      <md-list-item class="md-2-line" 
-                    ng-repeat="area in vm.resumeData.expertise">
-        <img ng-src="{{ area.icon }}" 
-             class="md-avatar">
-        <div class="md-list-item-text">
-          <h3>{{ area.name }}</h3>
-          <md-progress-linear class="md-accent" 
-                              md-mode="determinate" 
-                              value="{{ area.level }}">
-          </md-progress-linear>
-        </div>        
-      </md-list-item>
--->
-      <md-subheader>Download Résumé</md-subheader>
-      <md-list-item class="md-clickable"
-                    ng-repeat="drive in vm.resumeData.drives"
-                    ng-click="vm.navigateTo(drive.link)">
-        <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
-        <p>{{ drive.label }}</p>
+      <md-list-item ng-repeat="navLink in dm.navLinks">
+        <p>{{ navLink }}</p>
       </md-list-item>
     </md-list>
   </md-content>

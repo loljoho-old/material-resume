@@ -33,6 +33,7 @@
   <!-- BEGIN: Sidenav Content -->
   <md-content md-scroll-y flex>
     <md-list>
+      <md-subheader class="md-no-sticky">Contact</md-subheader>
       <md-list-item class="md-clickable"
                     ng-click="vm.contactWith(email)">
         <md-icon class="material-icons">&#xE0BE;</md-icon>
@@ -53,12 +54,32 @@
         <md-icon class="material-icons">&#xE55F;</md-icon>
         <p>{{ vm.resumeData.basics.location.city }}, {{ vm.resumeData.basics.location.region }}</p>
       </md-list-item>
+
+      <md-divider></md-divider>
+
+      <md-subheader class="md-no-sticky">Download Résumé</md-subheader>
+      <md-list-item class="md-clickable"
+                    ng-repeat="drive in vm.resumeData.drives"
+                    ng-click="vm.navigateTo(drive.link)">
+        <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
+        <p>{{ drive.label }}</p>
+      </md-list-item>
+
+      <md-divider></md-divider>
+
+      <md-subheader class="md-no-sticky">View Profiles</md-subheader>
+      <md-list-item class="md-clickable"
+                    ng-repeat="profile in vm.resumeData.basics.profiles"
+                    ng-click="vm.navigateTo(profile.url)">
+        <md-icon md-svg-icon="{{ profile.network | lowercase }}"></md-icon>
+        <p>{{ profile.network }}</p>
+      </md-list-item>
     </md-list>
   </md-content>
   <!-- ENDOF: Sidenav Content -->
 
 
-  <!-- BEGIN: Sidenav Toolbar -->
+  <!-- BEGIN: Sidenav Toolbar 
   <md-toolbar class="md-accent md-hue-3">
     <div class="md-toolbar-tools">
       <span flex></span>
@@ -74,7 +95,7 @@
       <span flex></span>
     </div>
   </md-toolbar>
-  <!-- ENDOF: Sidenav Toolbar -->
+  ENDOF: Sidenav Toolbar -->
 
 
 </md-sidenav>

@@ -7,6 +7,7 @@ md-sidenav.site-sidenav.md-sidenav-left {
     background-color: $md-accent-hue-3;
     text-align: center;
     padding-top: 12px;
+    min-height: 140px;
 
     > img {
       @include element-height(128px);
