@@ -63,6 +63,25 @@ While taking into consideration the extremely short period of time in which this
 
 ## Tasklist
 
+**Content**
+
+ - [ ] **Home**
+   - [ ] **Summary** - Professional Summary and/or Branding Statement
+   - [ ] **Ongoing** - Overview of Current/Ongoing Projects & Education
+   - [ ] **Profile** - Interests, Miscellaneous, etc
+   - [ ] **Contact** - Contact Me
+ - [ ] **Skills**
+   - [ ] **Solution Stack** - Current Preferred Stack
+   - [ ] **Areas of Expertise** - Areas of Expertise
+   - [ ] **Developmental Focus** - Current Ongoing Professional Development
+   - [ ] **Proficiencies** - Technical Skills, Concepts, Theories
+ - [ ] **Experience**
+   - [ ] **Employment** - Employment History
+   - [ ] **Projects** - Personal Projects/Portfolio
+   - [ ] **Other** - Professional Development; Education
+ - [ ] **Résumé**
+
+
 **Responsive**
 
  - [ ] Toggle button for left `md-sidenav`
@@ -88,6 +107,14 @@ While taking into consideration the extremely short period of time in which this
 
 **Note:** this section will only include MAJOR or MINOR version changes as per [Semantic Versioning](http://semver.org) i.e. given a version number X.Y.Z, increments in the numbers X or Y
 
+### 0.5.0 (24-June 2015)
+
+* Application restructuring
+* Layout restructuring
+  * Navbar Directive
+  * Sidenav Directives
+* Scss stylesheets
+* Routing
 
 ### 0.4.0 (23-June 2015)
 
