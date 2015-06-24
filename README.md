@@ -107,14 +107,17 @@ While taking into consideration the extremely short period of time in which this
 
 **Note:** this section will only include MAJOR or MINOR version changes as per [Semantic Versioning](http://semver.org) i.e. given a version number X.Y.Z, increments in the numbers X or Y
 
-### 0.5.0 (24-June 2015)
+### 0.6.0 (24-June 2015)
 
-* Application restructuring
-* Layout restructuring
-  * Navbar Directive
-  * Sidenav Directives
+* Navbar Directive
+* Sidenav Directives
 * Scss stylesheets
 * Routing
+
+### 0.5.0 (23-June 2015)
+
+* Application restructuring in progress
+* Page layout
 
 ### 0.4.0 (23-June 2015)
 
