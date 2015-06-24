@@ -1,25 +1,12 @@
+
 md-sidenav.site-sidenav.md-sidenav-left {
-  
-  background-color: transparent;
+  //background-color: transparent;
   @include element-width($sidenav-left-width);
+  //margin-top: 8px;
 
-  > header {
-    background-color: $md-accent-hue-3;
-    text-align: center;
-    padding-top: 12px;
-    min-height: 140px;
-
-    > img {
-      @include element-height(128px);
-      @include element-width(128px);
-      @include border-radius(64px);
-      margin: 0 auto;
+  md-toolbar {
+    md-icon {
+      //color: #fff;
     }
-
   }
-
-  .md-subhead {
-    padding-bottom: 16px;
-  }
-
 }

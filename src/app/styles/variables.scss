@@ -7,14 +7,19 @@
 
 // Theming
 // ------------------------------
-$md-accent-page:        rgb(255, 250, 253);
+$md-accent-page:        rgb(255, 255, 255);
+$md-toolbar-page:       rgb(40, 53, 147);
 
 $md-primary-font:       rgba(0, 0, 0, 0.870588);
-$md-primary-base:       rgb(158, 158, 158);
-$md-primary-hue-1:      rgb(224, 224, 224);
-$md-primary-hue-2:      rgb(66, 66, 66);
+$md-primary-base:       rgb(63, 81, 181);
+$md-primary-hue-1:      rgb(121, 134, 203);
+$md-primary-hue-2:      rgb(40, 53, 147);
 $md-primary-hue-2-font: rgba(255, 255, 255, 0.870588);
-$md-primary-hue-3:      rgb(255, 255, 255);
+$md-primary-hue-3:      rgb(140, 158, 255);
+//$md-primary-base:       rgb(158, 158, 158);
+//$md-primary-hue-1:      rgb(224, 224, 224);
+//$md-primary-hue-2:      rgb(66, 66, 66);
+//$md-primary-hue-3:      rgb(255, 255, 255);
 
 $md-accent-font:        rgba(255, 255, 255, 1);
 $md-accent-base:        rgb(255, 205, 210);
@@ -28,5 +33,5 @@ $font-family-base:    Ubuntu, sans-serif;
 
 // Sidenavs
 // ------------------------------
-$sidenav-left-width:  272px;
-$sidenav-right-width: 320px;
+$sidenav-right-width:  272px;
+$sidenav-left-width: auto;

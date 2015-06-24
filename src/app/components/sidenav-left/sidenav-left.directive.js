@@ -13,14 +13,6 @@
       templateUrl: 'app/components/sidenav-left/sidenav-left.html',
       controller: SidenavLeftController,
       controllerAs: 'dm'
-/*
-      scope: {
-          creationDate: '='
-      },
-      controller: NavbarController,
-      controllerAs: 'vm',
-      bindToController: true
-*/
     };
 
     return directive;
@@ -35,7 +27,27 @@
       activate();
 
       function activate() {
+        dm.navLinks = getNavLinks();
         $log.info('Sidenav-Left Controller Activated.');
+        return dm.navLinks;
+      }
+
+      function getNavLinks() {
+        return [
+          'Overview',
+            '> Summary',
+            '> Profile',
+            '> Ongoing',
+          'Skills & Expertise',
+            '> Solution Stack',
+            '> Areas of Expertise',
+            '> Technical Skills',
+            '> Proficiencies',
+          'Experience',
+            '> Projects',
+            '> Employment',
+            '> Education'
+        ];
       }
 
       function openSidenav() {
