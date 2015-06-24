@@ -16,15 +16,18 @@
     //  .warnPalette('deep-orange');
 
     $mdIconProvider
-      .icon('github',         'assets/icons/github.svg'    )
-      .icon('linkedin',       'assets/icons/linkedin.svg'  )
-      .icon('angellist',      'assets/icons/angellist.svg' )
-      .icon('codepen',        'assets/icons/codepen.svg'   )
+      .icon('github',         'assets/svg/font-awesome/github.svg'    )
+      .icon('linkedin',       'assets/svg/font-awesome/linkedin.svg'  )
+      .icon('angellist',      'assets/svg/font-awesome/angellist.svg' )
+      .icon('codepen',        'assets/svg/font-awesome/codepen.svg'   )
 
-      .icon('google',         'assets/icons/googledrive.svg'  )
-      .icon('dropbox',        'assets/icons/dropbox.svg'      )
-      .icon('onedrive',       'assets/icons/onedrive.svg'     );
+      .icon('arrow-fore',     'assets/svg/material/arrow-fore.svg'    )
+      .icon('arrow-back',     'assets/svg/material/arrow-back.svg'    )
+      .icon('menu-bars',      'assets/svg/material/menu-bars.svg'     )      
 
+      .icon('google',         'assets/svg/drives/googledrive.svg'     )
+      .icon('dropbox',        'assets/svg/drives/dropbox.svg'         )
+      .icon('onedrive',       'assets/svg/drives/onedrive.svg'        );
   }
 
 })();
