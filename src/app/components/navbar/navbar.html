@@ -2,22 +2,26 @@
             layout="row">
   <div class="md-toolbar-tools">
 
-    <span flex></span>
-
-    <div class="separator"></div>
-
+<!--
     <span>
-
-      <small>Download Résumé:</small>
-
+      <small hide-sm>Download</small>
+      <small hide-sm hide-md>Résumé:</small>
       <md-button class="md-icon-button"
                  ng-repeat="drive in vm.resumeData.drives"
                  ng-click="vm.navigateTo(drive.link)">
         <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
         <md-tooltip>{{ drive.label }}</md-tooltip>
       </md-button>
-
     </span>
+    <div class="separator"></div>
+-->
+
+    <span flex></span>
+    <md-button class="md-icon-button"
+               ng-click="vm.toggleRight()"
+               hide-gt-md>
+      <md-icon class="material-icons">&#xE5C8;</md-icon>
+    </md-button>
 
   </div>
 </md-toolbar>

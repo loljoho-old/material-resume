@@ -1,12 +1,12 @@
 
 md-sidenav.site-sidenav.md-sidenav-right {
-  background-color: transparent;
+  //background-color: transparent;
   @include element-width($sidenav-right-width);
-  margin-top: 8px;
+  //margin-top: 8px;
 
   md-toolbar {
     md-icon {
-      color: #fff;
+      //color: #fff;
     }
   }
 }

@@ -1,8 +1,8 @@
-<md-sidenav class="site-sidenav md-sidenav-right"
+<md-sidenav class="site-sidenav md-sidenav-right md-whiteframe-z3"
                   md-component-id="right"
-                  md-is-locked-open="dm.isLocked">
+                  md-is-locked-open="$mdMedia('gt-md')">
 
-  <md-toolbar class="md-accent md-hue-3">
+  <!--
     <div class="md-toolbar-tools">
       <md-button class="md-icon-button"
                  ng-click="dm.closeRight();">
@@ -10,10 +10,17 @@
       </md-button>
       <span flex></span>
     </div>
-  </md-toolbar>
+  -->
 
-  <md-content flex class="md-whiteframe-z4">
+  <md-toolbar class="md-accent md-hue-3">
+    <md-button class="md-toolbar-tools"
+               ng-click="dm.closeRight()">
+    </md-button>
+  </md-toolbar>
+  <md-content flex>
     <md-list>
+
+<!--
       <md-subheader>Areas of Expertise</md-subheader>
       <md-list-item class="md-2-line" 
                     ng-repeat="area in vm.resumeData.expertise">
@@ -26,6 +33,14 @@
                               value="{{ area.level }}">
           </md-progress-linear>
         </div>        
+      </md-list-item>
+-->
+      <md-subheader>Download Résumé</md-subheader>
+      <md-list-item class="md-clickable"
+                    ng-repeat="drive in vm.resumeData.drives"
+                    ng-click="vm.navigateTo(drive.link)">
+        <md-icon md-svg-icon="{{ drive.icon }}"></md-icon>
+        <p>{{ drive.label }}</p>
       </md-list-item>
     </md-list>
   </md-content>

@@ -4,14 +4,8 @@
 
 
   <!-- BEGIN: Header Block -->
-  <header style="background-color:rgb(213, 0, 0); 
-                 text-align:center;
-                 padding-top: 12px;">
-    <img ng-src="{{ vm.resumeData.basics.picture }}"
-         style="height: 128px; 
-                width: 128px;
-                margin: 0 auto;
-                border-radius: 64px;">
+  <header>
+    <img ng-src="{{ vm.resumeData.basics.picture }}">
   </header>
   <!-- ENDOF: Header Block -->
                 
@@ -37,9 +31,8 @@
 
 
   <!-- BEGIN: Sidenav Content -->
-  <md-content flex>
+  <md-content md-scroll-y flex>
     <md-list>
-      <md-subheader>Contact</md-subheader>
       <md-list-item class="md-clickable"
                     ng-click="vm.contactWith(email)">
         <md-icon class="material-icons">&#xE0BE;</md-icon>

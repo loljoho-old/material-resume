@@ -1,5 +1,7 @@
 <!doctype html>
-<html ng-app="resumeApp" ng-controller="ResumeController as vm">
+<html ng-app="resumeApp" 
+      ng-controller="ResumeController as vm">
+      
   <head>
   <meta charset="utf-8">
   <title>Jonathan Ho · Web Developer · New York NY</title>
@@ -46,7 +48,9 @@
 
 
     <!-- BEGIN: Inner Container -->
-    <md-content class="site-inner" layout="row">
+    <md-content class="site-inner" 
+                layout="row"
+                flex>
 
 
 
@@ -65,17 +69,18 @@
 
 
 
+
+
       <!-- BEGIN: Sidenav Right -->
       <mr-sidenav-right></mr-sidenav-right>
       <!-- ENDOF: Sidenav Right -->
-
-
     </md-content>
     <!-- ENDOF: Inner Container -->
 
 
   </div>
   <!-- ENDOF: Site Container -->
+    
 
   <!-- build:js(src) scripts/vendor.js -->
   <!-- bower:js -->

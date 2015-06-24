@@ -1,6 +1,5 @@
 .site-container, .site-inner, .site-main {
   background-color: $md-accent-page;
-  //color: $md-accent-font;
 }
 
 .separator {
@@ -9,4 +8,24 @@
   margin: 0 22px;
   opacity: 0.14;
   display: block;
+}
+
+.site-container {
+  //overflow: hidden;
+  .site-inner {
+    //overflow: hidden;
+    .site-main {
+      //overflow-y: scroll;
+      //overflow-x: hidden;
+     
+    }
+  }
+}
+
+md-sidenav.site-sidenav {
+  md-content {
+    overflow-x: hidden;
+    //overflow-y: scroll;
+
+  }
 }
