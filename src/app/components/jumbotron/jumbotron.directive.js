@@ -13,7 +13,8 @@
       transclude: true,
       scope: {
         size: '=',
-        name: '='
+        background: '=',
+        foreground: '='
       },
       link: linkFunc,
       templateUrl: 'app/components/jumbotron/jumbotron.html',

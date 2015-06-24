@@ -1,27 +1,37 @@
-@mixin border-radius($radius) {
--webkit-border-radius: $radius;
-   -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-        border-radius: $radius;
-}
-@mixin element-height($height) {
-  min-height: $height;
-  max-height: $height;
-      height: $height;
-}
-@mixin element-width($width) {
-  min-width: $width;
-  max-width: $width;
-      width: $width;
-}
+
 
 .mr-jumbotron {
+  color: $md-primary-font;
+  background-color: $md-primary-base;
 
-  @include element-width(100%);
+  &.md-hue-1 {
+    background-color: $md-primary-hue-1;
+  }
+  &.md-hue-2 {
+    color: $md-primary-hue-2-font;
+    background-color: $md-primary-hue-2;
+  }
+  &.md-hue-3 {
+    background-color: $md-primary-hue-3;
+  }
 
-  font-size: 16px;
-  padding: 12px;
-  margin: 0;
+  &.md-accent {
+    color: $md-accent-font;
+    background-color: $md-accent-base;
+    &.md-hue-1 {
+      background-color: $md-accent-hue-1;
+    }
+    &.md-hue-2 {
+      background-color: $md-accent-hue-2;
+    }
+    &.md-hue-3 {
+      background-color: $md-accent-hue-3;
+    }
+  }
+
+  //font-size: 16px;
+  //padding: 12px;
+  margin: 16px 0;
   padding: 16 32px;
 
   &.sm {
