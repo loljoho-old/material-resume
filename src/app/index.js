@@ -11,8 +11,10 @@
 
     vm.resumeData = [];
     vm.pageTitle  = '';
+    vm.activated  = false;
 
-    vm.viewportSmall  = viewportSmall; 
+    vm.contentPadding     = contentPadding;
+    vm.getRightToggleIcon = getRightToggleIcon;
 
     activate();
 
@@ -20,6 +22,7 @@
       vm.resumeData   = getResume();
       vm.toggleLeft   = buildToggler('left');
       vm.toggleRight  = buildToggler('right');
+      vm.activated    = true;
     }
 
     function getResume() {
@@ -43,8 +46,12 @@
       return debounceFn;
     }
 
-    function viewportSmall() {
-      return $mdMedia('sm');
+    function contentPadding() {
+      return $mdMedia('gt-md');
+    }
+
+    function getRightToggleIcon() {
+      return vm.activated && $mdSidenav('right').isOpen() ? 'arrow-fore' : 'arrow-back';
     }
 
   }
